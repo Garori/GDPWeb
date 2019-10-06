@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MembersComponent } from './members/members.component';
+import { ProfileComponent } from './profile/profile.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { UnderconstructionComponent } from './underconstruction/underconstruction.component';
 import { AboutComponent } from './about/about.component';
-import { PersonalComponent } from './personal/personal.component';
-import { homedir } from 'os';
+//import { homedir } from 'os';
 
 const routes: Routes = [
   { 
@@ -27,8 +27,9 @@ const routes: Routes = [
     component: MembersComponent
   },
   { 
-    path: 'members/:', 
-    component: PersonalComponent
+    //path: 'members/:profile', 
+    path: 'profile',
+    component: ProfileComponent
   },
   { 
     path: 'about', 
