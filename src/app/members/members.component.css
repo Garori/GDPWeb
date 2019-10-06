@@ -1,0 +1,106 @@
+/*Member*/
+.member {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    background-image: url(../../assets/img/background/blackBG.png);
+}
+.member h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow:1px 1px #ccc;
+}
+.member hr {
+    border-top: 2px solid rgb(255, 224, 49);
+}
+.member img {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/*Member Cards*/
+.member-card {
+    position: relative;
+    display: inline-block;
+}
+.member-card:hover .img-back {
+    display: none;
+}
+.member-card .img-top {
+    display: none;
+    position: relative;
+}
+.member-card:hover .img-top {
+    display: inline;
+}
+
+/*---Media Queries --*/
+@media (max-width: 1200px) {
+    .member img {
+        width: 115%;
+        padding-bottom: 1.5rem;
+        transform: translateX(-5%);
+    }
+}
+
+@media (max-width: 992px) {
+    /*Member*/
+    .member {
+        padding-top: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .member img {
+        width: 100%;
+        transform: translateX(0);
+    }
+    .member h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    /*Member*/
+    .member {
+        padding-bottom: 2rem;
+    }
+    .member h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /*Member*/
+    .member {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .member img {
+        padding-bottom: 1rem;
+    }
+    .member h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
